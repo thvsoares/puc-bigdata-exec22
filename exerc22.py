@@ -32,6 +32,6 @@ s.reducefn = reducefn
 
 results = s.run_server(password="p4ssw0rd")
 
-w = csv.writer(open("C:\\Temp\\Arq_Exerc\\result.csv", "w"))
+w = csv.writer(open("C:\\Temp\\Join\\result.csv", "w"))
 for k, v in results.items():
     w.writerow([k, v])
