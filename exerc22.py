@@ -2,7 +2,7 @@ import mincemeat
 import glob
 import csv
 
-text_files = glob.glob('C:\\Temp\\Arq_Exerc\\Textos\\*')
+data_files = glob.glob('C:\\Temp\\Join\\Data\\*')
 
 def file_contents(file_name):
     f = open(file_name)
@@ -11,7 +11,7 @@ def file_contents(file_name):
     finally:
         f.close()
     
-source = dict((file_name, file_contents(file_name))for file_name in text_files)
+source = dict((file_name, file_contents(file_name))for file_name in data_files)
 
 def mapfn(k,v):
     print 'map ' + k
