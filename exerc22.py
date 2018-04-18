@@ -23,7 +23,7 @@ def mapfn(k,v):
 
 def reducefn(k, v):
     print 'reduce ' + k
-    return sum(v)
+    return v
 
 s = mincemeat.Server()
 s.datasource = source
